@@ -3,7 +3,7 @@ name: github-actions
 on:
   push:
     branches:
-      - elastic-beanstalk
+      - main
 
 jobs:
   build-and-deploy:
