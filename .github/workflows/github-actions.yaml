@@ -14,12 +14,12 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
       - name: Install Dependencies
         run: npm install
       - name: Genrate Deployment Package
         run: zip -r nodejs-app-build.zip .
-      - name: Deploy to EB
+      - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v21
         with:
           aws_access_key: ${{ secrets.AWS_ACCESS_KEY }}
