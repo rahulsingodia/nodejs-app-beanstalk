@@ -9,7 +9,7 @@ jobs:
   build-and-deploy:
     runs-on: [ ubuntu-latest ]
     steps:
-      - name: Checkout Source
+      - name: Check-out Source
         uses: actions/checkout@v4
       - name: Setup Node
         uses: actions/setup-node@v4
